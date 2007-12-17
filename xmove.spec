@@ -19,7 +19,6 @@ Source0:	ftp://ftp.cs.columbia.edu/pub/xmove/%{name}.%{version}.tar.bz2
 %endif
 License:	MIT
 Group:		System/X11
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		ftp://ftp.cs.columbia.edu/pub/xmove/
 BuildRequires:	X11-devel
 BuildRequires:	X11
