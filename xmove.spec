@@ -59,6 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %doc README doc/*
-/usr/X11R6/bin/xmove*
+%_bindir/xmove*
 %{_mandir}/man1/xmove*
 
