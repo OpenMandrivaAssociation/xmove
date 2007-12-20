@@ -20,7 +20,7 @@ Source0:	ftp://ftp.cs.columbia.edu/pub/xmove/%{name}.%{version}.tar.bz2
 License:	MIT
 Group:		System/X11
 URL:		ftp://ftp.cs.columbia.edu/pub/xmove/
-BuildRequires:	X11-devel
+BuildRequires:	X11-devel imake
 Patch0:		xmove-2.0-unix-domain.patch.bz2
 
 %description
