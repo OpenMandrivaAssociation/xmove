@@ -1,6 +1,6 @@
 %define name	xmove
 %define version	2.0
-%define rel	2
+%define rel	3
 %define beta	2
 %if %{beta}
 %define release %mkrel 0.beta%{beta}.%{rel}
