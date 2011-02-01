@@ -1,6 +1,6 @@
 %define name	xmove
 %define version	2.0
-%define rel	3
+%define rel	4
 %define beta	2
 %if %{beta}
 %define release %mkrel 0.beta%{beta}.%{rel}
@@ -21,8 +21,8 @@ License:	MIT
 Group:		System/X11
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		ftp://ftp.cs.columbia.edu/pub/xmove/
-BuildRequires:	X11-devel imake
-Patch0:		xmove-2.0-unix-domain.patch.bz2
+BuildRequires:	libx11-devel imake
+Patch0:		xmove-2.0-unix-domain.patch
 
 %description
 xmove is a pseudoserver (aka proxy server) which allows you
@@ -39,7 +39,7 @@ for i in xmove xmovectrl; do
 	cd $i
 	ln -sf ../man/man1/$i.1 $i.man
 	xmkmf
-	%make
+	%make CXXOPTIONS="%optflags" EXTRA_LDOPTIONS="%ldflags"
 	cd $OLDPWD
 done
 
