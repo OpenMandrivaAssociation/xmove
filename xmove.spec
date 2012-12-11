@@ -63,3 +63,33 @@ rm -rf $RPM_BUILD_ROOT
 %_bindir/xmove*
 %{_mandir}/man1/xmove*
 
+
+
+%changelog
+* Tue Feb 01 2011 Funda Wang <fwang@mandriva.org> 2.0-0.beta2.4mdv2011.0
++ Revision: 634908
+- simplify BR
+
+* Wed Sep 09 2009 Thierry Vignaud <tv@mandriva.org> 2.0-0.beta2.3mdv2010.0
++ Revision: 435250
+- rebuild
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 2.0-0.beta2.2mdv2009.0
++ Revision: 136612
+- restore BuildRoot
+
+* Thu Dec 20 2007 Thierry Vignaud <tv@mandriva.org> 2.0-0.beta2.2mdv2008.1
++ Revision: 135615
+- adatp to new xorg layout
+- BR imake
+- kill bogus BR
+- kill re-definition of %%buildroot on Pixel's request
+- import xmove
+
+
+* Sat Sep 03 2005 Marcel Pol <mpol@mandriva.org> 2.0-0.beta2.2mdk
+- buildrequires x11
+
+* Thu Aug  4 2005 Olivier Blin <oblin@mandriva.com> 2.0-0.beta2.1mdk
+- initial Mandriva release
+- Patch0: Unix domain sockets support (from Debian)
