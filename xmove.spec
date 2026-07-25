@@ -3,9 +3,9 @@
 %define rel	4
 %define beta	2
 %if %{beta}
-%define release %mkrel 0.beta%{beta}.%{rel}
+%define release 0.beta%{beta}.%{rel}.1
 %else
-%define release	%mkrel %{rel}
+%define release %{rel}.1
 %endif
 
 Name:		%{name}
